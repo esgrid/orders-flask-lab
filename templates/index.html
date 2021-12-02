@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='style1.css') }}">
+    <title>{{title}} | Book Orders List</title>
+</head>
+
+<body>
+    <h1>Book Orders List</h1>
+    <div class = "list">
+        <ul>
+            {% for order in orders %}
+            <div class = "order-element">
+                <a href="/orders/{{order.order_number}}">
+                    <li><b>Order No. {{order.order_number}}</b>:</li> 
+                </a>
+                    <p>{{order.customer_name}} bought <em>{{order.book_title}}</em> by {{order.author}}</p>
+                    <p>Date: <em>{{order.date}}</em></p>
+            </div>
+            {% endfor %}
+        </ul>        
+    </div>
+</body>
+</html>

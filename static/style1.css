@@ -1,0 +1,21 @@
+h1 {
+    text-shadow: 2px 2px 2px lightsteelblue;
+    font-family: Georgia, serif;
+    font-size:xx-large;
+    letter-spacing: .1em;
+    border: 3px solid lightpink;
+    border-radius: 2px 2px 2px 2px;
+    /* box-shadow: 0.5px 0.5px 5px 0.5px red; */
+    text-align: center;
+}
+
+.list {
+    border: 2px solid lightpink;
+    border-radius: 5px 5px;
+}
+
+.order-element{
+    /* border: 1px solid red; */
+    border-bottom: 1px solid red;
+    padding-top: 0.3em;
+}

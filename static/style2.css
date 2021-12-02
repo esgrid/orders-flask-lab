@@ -1,0 +1,11 @@
+h1 {
+    text-shadow: 2px 2px 2px cornflowerblue;
+    font-family: Georgia, serif;
+    font-size:xx-large;
+    letter-spacing: 0.1em;
+}
+
+ul {
+    border: 1px solid royalblue;
+    border-radius: 5px 5px;
+}
